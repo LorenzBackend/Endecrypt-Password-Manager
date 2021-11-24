@@ -96,7 +96,7 @@ namespace Endecrypt
             txtPw.isPassword = true;
         }
         
-                public string getTitle()
+        public string getTitle()
         {
             return txtTitle.Text;
         }
