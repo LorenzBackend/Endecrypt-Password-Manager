@@ -19,9 +19,7 @@ namespace Endecrypt
         {
             InitializeComponent();
         }
-
-        public delegate void OnChange(string title, string name, string password, int index);
-        public event OnChange OnDataChange;
+        private string imageKey = "none";
 
         public AddPasswordDialog(string title, string name, string password, string image)
         {
@@ -35,8 +33,6 @@ namespace Endecrypt
                 pictureBox1.Image = Image.FromFile(image);
             }
         }
-        private string imageKey = "none";
-
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
