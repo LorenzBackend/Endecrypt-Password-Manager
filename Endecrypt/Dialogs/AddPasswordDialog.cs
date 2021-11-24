@@ -30,6 +30,7 @@ namespace Endecrypt
             txtPw.Text = password;
             if (!image.Equals("none") && File.Exists(image))
             {
+                 imageKey = image;
                 pictureBox1.Image = Image.FromFile(image);
             }
         }
