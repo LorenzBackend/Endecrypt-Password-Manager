@@ -46,8 +46,6 @@ namespace Endecrypt
                 timer1.Stop();
                 count = 20;
             }
-
-            IEncryptor encryptor = new Encryptor();
             Clipboard.SetText(Password);
             timer1.Start();
             isTick = true;
