@@ -62,25 +62,7 @@ namespace Endecrypt
 
             return true;
         }
-        public string getTitle()
-        {
-            return txtTitle.Text;
-        }
-
-        public string getName()
-        {
-            return txtName.Text;
-        }
-
-        public string getPassword()
-        {
-            return txtPw.Text;
-        }
-
-        public string getImage()
-        {
-            return imageKey;
-        }
+        
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
@@ -112,6 +94,26 @@ namespace Endecrypt
         private void txtPw_OnValueChanged(object sender, EventArgs e)
         {
             txtPw.isPassword = true;
+        }
+        
+                public string getTitle()
+        {
+            return txtTitle.Text;
+        }
+
+        public string getName()
+        {
+            return txtName.Text;
+        }
+
+        public string getPassword()
+        {
+            return txtPw.Text;
+        }
+
+        public string getImage()
+        {
+            return imageKey;
         }
     }
 }
